@@ -1,0 +1,8 @@
+[
+  {
+    "remote":       "github",
+    "repository":   "dani020110/kernel",
+    "target_path":  "kernel/sony/tulip",
+    "revision":     "twrp_137"
+  }
+]

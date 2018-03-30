@@ -1,0 +1,9 @@
+/boot          emmc            /dev/block/bootdevice/by-name/boot
+/system        ext4            /dev/block/bootdevice/by-name/system
+/data          ext4            /dev/block/bootdevice/by-name/userdata
+/cache         ext4            /dev/block/bootdevice/by-name/cache
+/odm           ext4            /dev/block/bootdevice/by-name/oem                flags=display="OEM (ODM)";backup=1;wipeingui
+/recovery      emmc            /dev/block/bootdevice/by-name/FOTAKernel         flags=display="FOTAKernel (Recovery)";backup=1
+
+/external_sd   auto            /dev/block/mmcblk1p1     /dev/block/mmcblk1      flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg       auto            /dev/block/sda1          /dev/block/sda          flags=display="USB OTG";storage;wipeingui;removable
