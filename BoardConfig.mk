@@ -60,6 +60,8 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_INCLUDE_CRYPTO := true
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_DEFAULT_BRIGHTNESS := 149
+# Necessary only for minimal-manifest-twrp 8.1
+ALLOW_MISSING_DEPENDENCIES = true
 
 # Vendor Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
