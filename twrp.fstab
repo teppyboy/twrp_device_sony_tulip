@@ -1,9 +1,9 @@
-/boot          emmc            /dev/block/bootdevice/by-name/boot
-/system        ext4            /dev/block/bootdevice/by-name/system
-/data          ext4            /dev/block/bootdevice/by-name/userdata
-/cache         ext4            /dev/block/bootdevice/by-name/cache
-/odm           ext4            /dev/block/bootdevice/by-name/oem                flags=display="OEM (ODM)";backup=1;wipeingui
-/recovery      emmc            /dev/block/bootdevice/by-name/FOTAKernel         flags=display="FOTAKernel (Recovery)";backup=1
+/boot          emmc            /dev/block/platform/soc.0/7824900.sdhci/by-name/boot
+/system        ext4            /dev/block/platform/soc.0/7824900.sdhci/by-name/system             flags=display="System";backup=1;wipeingui
+/data          ext4            /dev/block/platform/soc.0/7824900.sdhci/by-name/userdata           encryptable=footer
+/cache         ext4            /dev/block/platform/soc.0/7824900.sdhci/by-name/cache
+/odm           ext4            /dev/block/platform/soc.0/7824900.sdhci/by-name/oem                flags=display="OEM (ODM)";backup=1;wipeingui
+/recovery      emmc            /dev/block/platform/soc.0/7824900.sdhci/by-name/FOTAKernel         flags=display="FOTAKernel (Recovery)";backup=1
 
-/external_sd   auto            /dev/block/mmcblk1p1     /dev/block/mmcblk1      flags=display="Micro SDcard";storage;wipeingui;removable
-/usb-otg       auto            /dev/block/sda1          /dev/block/sda          flags=display="USB OTG";storage;wipeingui;removable
+/external_sd   auto            /dev/block/mmcblk0p1     /dev/block/mmcblk0      flags=display="SDcard Two";storage;wipeingui;removable
+/usb-otg       auto            /dev/block/sda1          /dev/block/sda          flags=display="USB-OTG";storage;wipeingui;removable
